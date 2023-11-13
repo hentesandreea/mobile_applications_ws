@@ -2,8 +2,11 @@
 From 99 JavaScript exercises I've completed more than 50, exercising my knowledge in JavaScript.These exercises helped me understand how to use functions, methods and objects.
 
 At the first introductive workshop for React Native I've learned how to edit a text.
+
 In the 2nd workshop of React I've learned how to make a basic components such as: Text input, buttons.
+
 As a homework I've created a City Card using a button an image and I've exercised working with components.
+
 I have also created a personal card which helped me  understand better how to work with texts, images and containers.
 
 
