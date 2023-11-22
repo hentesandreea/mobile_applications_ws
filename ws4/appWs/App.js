@@ -2,6 +2,9 @@ import BasicComponents from "./BasicComponents";
 import CityComp from "./CityComp";
 import BadgeComp from "./BadgeComp";
 import DownloadComponent from "./DownloadComponent";
+import WeatherComponent from "./WheatherComponent";
+import KHeader from "./KHeader";
+import KVisaCard from "./KVisaCard";
 
 
 export default function App() {
@@ -9,7 +12,10 @@ export default function App() {
         //<BasicComponents/>
         //<CityComp/>
         //<BadgeComp/>
-        <DownloadComponent/>
+        // <DownloadComponent/>
+       /* <WeatherComponent/>*/
+      /*  <KHeader/>*/
+        <KVisaCard/>
     );
 }
 
