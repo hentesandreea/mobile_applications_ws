@@ -5,6 +5,7 @@ import DownloadComponent from "./DownloadComponent";
 import WeatherComponent from "./WheatherComponent";
 import KHeader from "./KHeader";
 import KVisaCard from "./KVisaCard";
+import LoginPage from "./LoginPage";
 
 
 export default function App() {
@@ -15,7 +16,8 @@ export default function App() {
         // <DownloadComponent/>
        /* <WeatherComponent/>*/
       /*  <KHeader/>*/
-        <KVisaCard/>
+       /* <KVisaCard/>*/
+        <LoginPage/>
     );
 }
 
