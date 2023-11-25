@@ -1,8 +1,23 @@
-import {View, StyleSheet, Image, Text, TouchableOpacity, TextInput, Touchable} from "react-native";
-
+import {View, StyleSheet, Image, Text, TextInput, TouchableOpacity} from "react-native";
+import Toast, {BaseToast} from 'react-native-toast-message';
 export default function LoginPage(){
+    const toastConfig = {
+        success: (props) =>(
+            <BaseToast
+                {...props}
+                style={{ borderLeftColor: '#ED9ED6'  ,backgroundColor:'#ED9ED6',alignSelf:'center',alignItems:'center'}}
+                /*contentContainerStyle={{  }}*/
+                text1Style={{
+                    fontSize:14,
+                    fontWeight:200,
+                    color:'black',
+                }}/>
+        )
+                }
     return(
         <View style={styles.container}>
+
+            <Toast config={toastConfig}/>
                 <View style ={styles.imgCont}>
                     <Image source={{uri:"https://images.unsplash.com/photo-1640379878948-72b9db349e17?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}}
                            style ={styles.image}>
@@ -13,17 +28,21 @@ export default function LoginPage(){
                 <TextInput style={styles.username} placeholder={'Introduce username...'}></TextInput>
                 <TextInput secureTextEntry={true} style ={styles.password} placeholder={'Introduce password...'}></TextInput>
                 <View style={styles.creatingAcc}>
+
                     <TouchableOpacity
                         style={styles.button}
-                        onPress={() => alert("Account have been created")}
-                    >
+                        onPress={() => {
+                            Toast.show({
+                                type: 'success',
+                                text1: 'Your account has been created!👋',
+                            })
+                        }}>
                         <Text style={styles.register}>Register</Text>
                     </TouchableOpacity>
                     <View style ={styles.texts}>
                         <Text style ={styles.question}>Already have an account?</Text>
                         <Text style={styles.login}>Log In</Text>
                     </View>
-
                 </View>
             </View>
         </View>
@@ -98,7 +117,7 @@ const styles = StyleSheet.create({
     },
     button:{
             backgroundColor:'#FF6AC2',
-            width:'60%',
+        width:'60%',
         padding:10,
         borderWidth:0.5,
         borderRadius:10,
@@ -112,7 +131,7 @@ const styles = StyleSheet.create({
     },
     texts:{
         width:'90%',
-        height:'60%',
+        height:'70%',
         alignItems:'center',
         paddingTop:10,
         flexDirection:'row',
