@@ -1,12 +1,11 @@
-import BasicComponents from "./BasicComponents";
+/*import BasicComponents from "./BasicComponents";
 import CityComp from "./CityComp";
 import BadgeComp from "./BadgeComp";
 import DownloadComponent from "./DownloadComponent";
 import WeatherComponent from "./WheatherComponent";
 import KHeader from "./KHeader";
-import KVisaCard from "./KVisaCard";
-import LoginPage from "./LoginPage";
-
+import KVisaCard from "./KVisaCard";*/
+import StackNavigation from "./StackNavigation";
 
 export default function App() {
     return (
@@ -17,7 +16,9 @@ export default function App() {
        /* <WeatherComponent/>*/
       /*  <KHeader/>*/
        /* <KVisaCard/>*/
-        <LoginPage/>
+        <NavigationContainer>
+            <StackNavigation/>
+        </NavigationContainer>
     );
 }
 
