@@ -4,11 +4,9 @@ export default function Register(props){
     const navigator = useNavigation()
     return(
         <View style={styles.container}>
-            <View style ={styles.imgCont}>
-                <Image source={{uri:"https://images.unsplash.com/photo-1640379878948-72b9db349e17?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}}
-                       style ={styles.image}>
-                </Image>
-            </View>
+            <Image source={{uri:"https://images.unsplash.com/photo-1640379878948-72b9db349e17?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}}
+                   style ={{borderRadius:100,height:'18%',width:'32%'}}>
+            </Image>
             <Text style ={styles.welcome}>Welcome to your favourite app!</Text>
             <View style ={styles.inputs}>
                 <TextInput style={styles.username} placeholder={'Introduce username...'}></TextInput>
@@ -20,7 +18,7 @@ export default function Register(props){
                     <View style ={styles.texts}>
                         <Text style ={styles.question}>Already have an account?</Text>
                         <TouchableOpacity onPress={() => navigator.navigate("LogIn")}>
-                            <Text style={{fontSize:15, textDecorationLine:'underline', color:'#3C4048',}}>Log In</Text>
+                            <Text style={{fontSize:15, textDecorationLine:'underline',fontWeight:400, color:'#3C4048',}}>Log In</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -43,22 +41,13 @@ const styles = StyleSheet.create({
         alignItems:'center',
         justifyContent:'center',
         padding:10,
-    },
-    imgCont:{
-        width:'22%',
-        height:'12%',
-        borderRadius:20,
-    },
-    image:{
-        width:'100%',
-        height:'100%',
-        borderRadius:100,
+
     },
     welcome:{
-        fontSize:18,
+        fontSize:20,
         padding:10,
-        fontWeight:400,
         paddingTop:30,
+        fontWeight:500,
 
     },
     inputs:{
@@ -76,7 +65,7 @@ const styles = StyleSheet.create({
         borderWidth:0.5,
         borderRadius:10,
         height:50,
-        width:"100%",
+        width:"110%",
     },
     password:{
         padding:10,
@@ -85,7 +74,7 @@ const styles = StyleSheet.create({
         borderWidth:0.5,
         borderRadius:10,
         height:50,
-        width:'100%',
+        width:'110%',
     },
     creatingAcc:{
         width:'90%',
@@ -105,7 +94,7 @@ const styles = StyleSheet.create({
         shadowOpacity:0.1,
     },
     register:{
-        fontSize:16,
+        fontSize:18,
         fontWeight:400,
 
     },
