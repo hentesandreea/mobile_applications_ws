@@ -23,7 +23,5 @@
 <ul>
 <li>Register screen</li>
  <img src ="./readme_photos/RegisterScreen.jpg" width = "300" height ="500"/> 
-  <li>Login screen</li>
-   <img src ="./readme_photos/LoginScreen.jpg" width = "300" height ="500"/> 
 </ul>
 
