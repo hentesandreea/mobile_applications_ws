@@ -28,7 +28,7 @@ export default function Home(props){
     return(
         <View style={{flex:1}}>
             <ScrollView contentContainerStyle={styles.container}>
-                <KSpacer h={80}/>
+                <KSpacer h={50}/>
                 <Text style={styles.header}>Find a job that suits you</Text>
                 <KSpacer h={20}/>
                 {

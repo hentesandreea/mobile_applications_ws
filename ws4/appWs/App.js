@@ -5,7 +5,8 @@ import DownloadComponent from "./DownloadComponent";
 import WeatherComponent from "./WheatherComponent";
 import KHeader from "./KHeader";
 import KVisaCard from "./KVisaCard";*/
-import StackNavigation from "./StackNavigation";
+/*import StackNavigation from "./StackNavigation";*/
+import KAlbum from "./KAlbum";
 
 export default function App() {
     return (
@@ -16,9 +17,10 @@ export default function App() {
        /* <WeatherComponent/>*/
       /*  <KHeader/>*/
        /* <KVisaCard/>*/
-        <NavigationContainer>
+       /* <NavigationContainer>
             <StackNavigation/>
-        </NavigationContainer>
+        </NavigationContainer>*/
+        <KAlbum/>
     );
 }
 

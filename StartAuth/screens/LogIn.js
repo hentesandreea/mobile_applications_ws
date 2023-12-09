@@ -26,7 +26,7 @@ export default function LogIn(props){
             </TouchableOpacity>
             <KSpacing h={30}/>
             <View style={{flexDirection:'row', gap:6}}>
-                <Text style={{ fontSize:14, color:'#3C4048',}}>Doesn't have an profile?</Text>
+                <Text style={{ fontSize:14, color:'#3C4048'}}>Do not have an account?</Text>
             <TouchableOpacity onPress={()=>navigator.goBack()}>
                 <Text style={{fontSize:14, fontWeight:400, color:"black",textDecorationLine:'underline'}}>Register</Text>
             </TouchableOpacity>
